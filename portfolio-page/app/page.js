@@ -1,10 +1,20 @@
 import Image from "next/image";
-import Header from ''
+import About from '@/app/components/About'
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Header/>
+    <div className="px-5 py-6 bg-[#3C493F]  text-white">
+      <About/>
+      <Skills/>
+      <Experience/>
+      <Projects/>
+      <Education/>
+      <Contact/>
     </div>
   );
 }
