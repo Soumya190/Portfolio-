@@ -3,7 +3,6 @@ import React from "react";
 import { useState } from "react";
 
 const Skills = () => {
-  // const [skills, setSkills] = useState(["HTML", "CSS", "Javascript", "React"]);
   const skills=[
     {
       logo:<svg
@@ -83,8 +82,8 @@ const Skills = () => {
 
   return (
     <>
-      <div id="skills" className="h-screen grid p-[2rem]  items-center py-10">
-        <p className="text-5xl font-semibold p-23">Skills & Tools</p>
+      <div id="skills" className="h-screen grid p-30 items-center">
+        <p className="text-5xl font-semibold p-5">Skills & Tools</p>
         {showSkills ? (
           <>
             <div className="flex justify-around">

@@ -20,9 +20,9 @@ const Education = () => {
   const description = []
   return (
     <>
-    <div id='education' className='h-[30rem] p-30 text-5xl font-semibold'>Education</div>
-    <div className=" py-10">
-      <div className="relative w-full max-w-4xl mx-auto px-4">
+    <div id='education' className='h-[30rem] p-30 '>
+      <p className='text-5xl font-semibold'>Education</p>
+      <div className="relative mt-40 w-full max-w-4xl mx-auto px-4">
         {/* Horizontal line */}
         <div className="absolute top-1/2 left-0 w-full h-1 bg-white opacity-20 transform -translate-y-1/2 z-0" />
 
@@ -36,24 +36,10 @@ const Education = () => {
             </div>
           ))}
         </div>
-      </div>
+    </div>
     </div>
   </>
   )
 }
 
 export default Education;
-
-
-{/* <div className=" py-10">
-<div className="flex items-center justify-between w-full max-w-5xl mx-auto relative">
-<div className="absolute top-1/2 left-0 w-full h-1 bg-[#f0f7f4]  "></div>
-
-{timelineData.map((year, index) => (
-  <div key={index} className="flex text-xl flex-col gap-4 items-center z-10">
-    <span className="text-white font-bold mb-4">{year}</span>
-    <div className="w-5 h-5  rounded-full relative bottom-7  bg-gradient-to-r from-[#78847C] to-[#B3BFB8]"></div>
-  </div>
-))}
-</div>
-</div> */}

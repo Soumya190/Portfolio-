@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="h-screen grid  p-[20rem] place-content-center gap-15 items-center py-10"
+      className="h-screen grid   place-content-center gap-15 items-center p-30"
     >
       <p className="font-semibold text-5xl">My Experience</p>
       <div className="h-[23rem] px-13 py-5 w-[40rem] border-gradient-to-r shadow-2xl rounded-2xl from-[#78847C] to-[#B3BFB8] border-2">
