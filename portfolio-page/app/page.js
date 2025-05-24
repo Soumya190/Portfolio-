@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="px-5 py-6 bg-[#3C493F]  text-white">
+    <div className="lg:px-5 lg:py-6  bg-[#3C493F]   text-white">
       <About/>
       <Skills/>
       <Experience/>

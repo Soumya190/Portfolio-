@@ -21,18 +21,17 @@ const Education = () => {
   return (
     <>
     <div id='education' className='h-[30rem] p-30 '>
-      <p className='text-5xl font-semibold'>Education</p>
+      <p className='text-2xl lg:text-5xl font-semibold'>Education</p>
       <div className="relative mt-40 w-full max-w-4xl mx-auto px-4">
-        {/* Horizontal line */}
         <div className="absolute top-1/2 left-0 w-full h-1 bg-white opacity-20 transform -translate-y-1/2 z-0" />
 
         <div className="flex justify-between items-center relative z-10">
           {educationEvents.map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center max-w-[180px]">
               <span className="text-white font-bold mb-3 text-xl">{item.year}</span>
-              <div className="w-4 h-4 rounded-full bg-gradient-to-r relative top-7 from-[#78847C] to-[#B3BFB8] mb-10"></div>
-              <p className="text-sm text-white font-medium">{item.title}</p>
-              <p className="text-xs text-gray-300">{item.description}</p>
+              <div className="w-4 h-4 rounded-full bg-gradient-to-r relative top-7 from-[#78847C] to-[#B3BFB8]  lg:mb-10"></div>
+              <p className="text-sm text-white font-medium relative top-15 lg:top-0">{item.title}</p>
+              <p className="text-xs text-gray-300 top-17 relative lg:top-0">{item.description}</p>
             </div>
           ))}
         </div>

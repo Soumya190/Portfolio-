@@ -41,26 +41,40 @@ const Contact = () => {
   ]);
 
   return (
-    <div className="h-screen grid gap-5 place-content-center items-center" id="contact">
-      <p className="font-semibold text-5xl text-center"> Contact me</p>
-      <p className="bg-gradient-to-r text-center from-[#78847C] to-[#B3BFB8] bg-clip-text text-transparent shadow-2xl rounded-2xl">
-        Feel free to reach out to me for any questions or opportunities.
-      </p>
-      <div className="flex justify-evenly items-center text-white">
-      {icons.map((icon, index) => (
-        <Link
-          key={index}
-          href={icon.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-8 h-8 fill-current text-white "
-        >
-          {icon.svg}
-        </Link>
-      ))}
-      </div>
-      <p className="text-center">2025 Soumya Tiwari. All rights reserved.</p>
-    </div>
+    <div
+  className="min-h-screen grid gap-6 px-4 py-8 place-content-center items-center text-center"
+  id="contact"
+>
+  {/* Title */}
+  <p className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+    Contact me
+  </p>
+
+  {/* Description */}
+  <p className="text-sm sm:text-base md:text-lg bg-gradient-to-r from-[#78847C] to-[#B3BFB8] bg-clip-text text-transparent shadow-2xl rounded-2xl px-2">
+    Feel free to reach out to me for any questions or opportunities.
+  </p>
+
+  {/* Icons container */}
+  <div className="flex flex-wrap justify-center gap-6 items-center text-white">
+    {icons.map((icon, index) => (
+      <Link
+        key={index}
+        href={icon.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-8 h-8 text-white"
+      >
+        {icon.svg}
+      </Link>
+    ))}
+  </div>
+
+  <p className="text-center text-xs sm:text-sm mt-4">
+    2025 Soumya Tiwari. All rights reserved.
+  </p>
+</div>
+
   );
 };
 
