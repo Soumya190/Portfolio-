@@ -156,7 +156,7 @@ const Skills = () => {
               <div className="w-[20rem] h-[27rem] md:w-[22rem] md:h-[22rem] lg:w-[30rem] lg:h-[20rem] sm:p-2 lg:px-10 border-gradient-to-r grid border-gradient-to-r rounded-2xl from-[#78847C] to-[#B3BFB8] shadow-2xl border-2">
                 <div className="h-5">
                   <p className="text-md md:text-lg lg:text-xl text-center py-4 font-semibold">
-                    Programming Languages
+                    Programming Languages and Libraries
                   </p>
                 </div>
                 <div className="grid h-[10rem] place-content-center items-center">
